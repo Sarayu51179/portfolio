@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sarayu Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<!-- PARTICLES BACKGROUND -->
+<div id="particles-js"></div>
+
+<!-- NAVBAR -->
+<nav>
+  <h2 class="logo">Mallarapu Sarayu</h2>
+  <div>
+    <a href="#aboutme ">About me</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contactme">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="aboutme">
+  <div class="hero-container">
+
+    <!-- TEXT -->
+    <div class="hero-text" data-aos="fade-right">
+      <h1 id="typing"></h1>
+      <p>Building scalable, explainable, and real-world AI systems</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+      <a href="resume.pdf" download class="btn resume-btn">Download Resume</a>
+    </div>
+
+  </div>
+</section>
+
+<section id="aboutme">
+  <div class="hero-container">
+
+    <!-- TEXT -->
+    <div class="hero-texts" data-aos="fade-right">
+      <h1 id="typing"></h1>
+
+      <h2>AI Researcher | LLM Systems | Multi-Agent Intelligence</h2>
+
+      <p>
+        <p>
+I’m a Data Science undergraduate focused on LLMs, multi-agent reinforcement learning, 
+and scalable AI system design. My work emphasizes model evaluation, robustness, and efficient deployment, 
+with experience across deep learning, computer vision, and NLP, including RAG, embeddings, and RL optimization. 
+I’m particularly interested in building interpretable, reliable, and production-ready AI systems through a research-driven approach.
+</p>
+      </p>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="hero-image" data-aos="fade-left">
+      <img src="sarayu img.jpeg" alt="Sarayu">
+    </div>
+
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+
+
+
+
+  <h2 data-aos="fade-up">Projects</h2>
+  <div class="project-grid">
+    <div class="card" data-aos="zoom-in">
+      <div class="project-title">Multi-Agent RL Navigation</div>
+      <p></p>
+      <div class="section-title">Problem:</div>
+      <p>Coordinating multiple robots in obstacle-dense environments while maintaining rigid formation is complex.</p>
+      <div class="section-title">Technical Approach:</div>
+      <p></p>
+        <li>Developed a multi-agent RL framework using PyTorch and OpenAI Gym; 
+          benchmarked SAC, PPO, DDPG, TD3, and TRPO</li>
+        <li>Introduced residual control (rule-based + RL) and multi-environment training to improve stability and generalization</li>
+<p></p>
+    <div class="section-title">Tech Stack:</div>
+    <p></p>
+    <div class="tech-stack">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">PyTorch</span>
+      <span class="tech-tag">OpenAI gym</span>
+      <span class="tech-tag">Numpy</span>
+    </div>
+<p></p>
+    <div class="section-title">Outcome:</div>
+    <p></p>
+    <div class="project-text outcome">
+      Improved navigation success rate by 35% and reduced collision frequency by 15%
+    </div>
+      <a href="#" class="btn small">GitHub</a>
+    </div>
+
+
+
+
+    <div class="card" data-aos="zoom-in">
+      <div class="project-title">AI-Legal Assisstant</div>
+      <p></p>
+      <div class="section-title">Problem:</div>
+      <p>Extracting accurate information from lengthy legal documents is time-consuming and prone to hallucinations.</p>
+      <div class="section-title">Technical Approach:</div>
+      <p></p>
+        <li>Built an end-to-end RAG-based system using LangChain, Pinecone, and IBM WatsonX with PDF preprocessing, semantic chunking, and embedding pipelines (Sentence Transformers – MiniLM)</li>
+        <li>Designed a custom retrieval + FastAPI + Streamlit pipeline for real-time querying and improved grounding</li>
+<p></p>
+    <div class="section-title">Tech Stack:</div>
+    <p></p>
+    <div class="tech-stack">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">FASTAPI</span>
+      <span class="tech-tag">Langchain</span>
+      <span class="tech-tag">Pinecone</span>
+      <span class="tech-tag">IBM Watsonx.ai</span>
+      <span class="tech-tag">Sentence Transformers</span>
+      <span class="tech-tag">Streamlit</span>
+    </div>
+<p></p>
+    <div class="section-title">Outcome:</div>
+    <p></p>
+    <div class="project-text outcome">
+      Reduced hallucinations and improved accuracy and relevance of responses over long-form legal documents
+    </div>
+      <a href="https://github.com/Sarayu51179/AI-Legal-Document-Assistant-RAG-" class="btn small">GitHub</a>
+    </div>
+
+
+
+    
+    <div class="card" data-aos="zoom-in">
+      <div class="project-title">Assistive System for Visually Impaired Individuals</div>
+      <p></p>
+      <div class="section-title">Problem:</div>
+      <p>Visually impaired individuals require real-time environmental awareness for safe navigation.</p>
+      <div class="section-title">Technical Approach:</div>
+      <p></p>
+        <li>Built a real-time system using computer vision, deep learning, and ultrasonic sensor fusion with SHAP and Grad-CAM for explainability</li>
+        <li>Integrated NLP-based text-to-speech (TTS) for real-time user feedback</li>
+<p></p>
+    <div class="section-title">Tech Stack:</div>
+    <p></p>
+    <div class="tech-stack">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">OpenCV</span>
+      <span class="tech-tag">Deep Learning</span>
+      <span class="tech-tag">Ultrasonic Sensors</span>
+      <span class="tech-tag">NLP</span>
+      <span class="tech-tag">TTS</span>
+    </div>
+<p></p>
+    <div class="section-title">Outcome:</div>
+    <p></p>
+    <div class="project-text outcome">
+      Improved object detection accuracy by 25%, increased transparency by 75%, and enhanced user interaction with real-time feedback.</div>
+      <a href="#" class="btn small">GitHub</a>
+    </div>
+
+
+
+
+<div class="card" data-aos="zoom-in">
+       <div class="project-title">Fall Detection System for Elderly Care</div>
+      <p></p>
+      <div class="section-title">Problem:</div>
+      <p>Falls in elderly individuals can be life threatening and reduces life span.</p>
+      <div class="section-title">Technical Approach:</div>
+      <p></p>
+        <li>Designed a real-time detection system using deep learning, computer vision, and wearable sensor data with posture and fall-angle analysis.</li>
+        <li>Integrated Explainable AI (XAI) and engineered continuous monitoring with alert generation.</li>
+<p></p>
+    <div class="section-title">Tech Stack:</div>
+    <p></p>
+    <div class="tech-stack">
+      <span class="tech-tag">Python</span>
+      <span class="tech-tag">OpenCV</span>
+      <span class="tech-tag">Deep Learning</span>
+      <span class="tech-tag">IOT Sensors</span>
+      <span class="tech-tag">Blynk</span>
+      <span class="tech-tag">Arduino</span>
+    </div>
+<p></p>
+    <div class="section-title">Outcome:</div>
+    <p></p>
+    <div class="project-text outcome">
+      Improved fall-angle detection accuracy by 49% and enabled real-time monitoring with rapid alerts.</div>
+      <a href="https://github.com/Sarayu51179/Fall-detection-system" class="btn small">GitHub</a>
+    </div>
+
+</section>
+
+
+<!--Skills-->
+<section id="skills">
+  <h2 data-aos="fade-up">Skills</h2>
+  <div class="skills-container">
+  <!-- Programming -->
+  <div class="skill-card">
+    <h3>Programming & Databases</h3>
+    <div class="tags">
+      <span>Python</span>
+      <span>SQL</span>
+    </div>
+  </div>
+
+  <!-- ML -->
+  <div class="skill-card">
+    <h3>Machine Learning & AI</h3>
+    <div class="tags">
+      <span>Machine Learning</span>
+      <span>Deep Learning</span>
+      <span>Reinforcement Learning</span>
+      <span>SAC</span>
+      <span>Policy Optimization</span>
+    </div>
+  </div>
+
+  <!-- GenAI -->
+  <div class="skill-card">
+    <h3>Generative AI & NLP</h3>
+    <div class="tags">
+      <span>LLMs</span>
+      <span>RAG</span>
+      <span>GenAI</span>
+      <span>Agentic AI</span>
+      <span>Hugging Face</span>
+      <span>Prompt Engineering</span>
+      <span>NLP Pipelines</span>
+    </div>
+  </div>
+
+  <!-- CV -->
+  <div class="skill-card">
+    <h3>Computer Vision</h3>
+    <div class="tags">
+      <span>Image Processing</span>
+      <span>Object Detection</span>
+      <span>Feature Extraction</span>
+      <span>Grad-CAM</span>
+    </div>
+  </div>
+
+  <!-- Tools -->
+  <div class="skill-card">
+    <h3>Frameworks & Tools</h3>
+    <div class="tags">
+      <span>OpenCV</span>
+      <span>NumPy</span>
+      <span>Pandas</span>
+      <span>Matplotlib</span>
+      <span>Power BI</span>
+      <span>Jupyter</span>
+      <span>LangChain</span>
+      <span>Streamlit</span>
+      <span>Git</span>
+      <span>VS Code</span>
+    </div>
+  </div>
+
+  <!-- Cloud -->
+  <div class="skill-card">
+    <h3>Cloud & Systems</h3>
+    <div class="tags">
+      <span>AWS S3</span>
+      <span>Azure Blob</span>
+      <span>IBM Cloud</span>
+      <span>n8n</span>
+      <span>Model Deployment</span>
+    </div>
+  </div>
+
+  <!-- Core CS -->
+  <div class="skill-card">
+    <h3>Core Computer Science</h3>
+    <div class="tags">
+      <span>OOPS</span>
+      <span>DSA</span>
+      <span>DAA</span>
+      <span>Algorithm Analysis</span>
+      <span>Performance Metrics</span>
+    </div>
+  </div>
+
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+  <h2 class="section-title" data-aos="fade-up">Achievements</h2>
+
+  <div class="timeline-container" data-aos="fade-up">
+
+    <div class="timeline-item" data-aos="zoom-in">
+      <div class="content">
+        <span>2023–Present</span>
+        <h3>Class Representative</h3>
+        <p>Led coordination for 70+ students</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <span>2024</span>
+        <h3>1st Place – Project Expo</h3>
+        <p>Assistive system for visually impaired</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <span>2024</span>
+        <h3>ISCB Volunteer</h3>
+        <p>24+ hrs event coordination</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <span>2024</span>
+        <h3>Hackathon Volunteer (UDHGAM)</h3>
+        <p>Managed real-time technical issues</p>
+      </div>
+    </div>
+
+    <div class="timeline-item">
+      <div class="content">
+        <span>2023</span>
+        <h3>3rd Place – NRSC Essay</h3>
+      </div>
+    </div>
+
+  </div>
+</section>
+<br>
+<br>
+<br>
+<br>
+<br>
+<section id="research">
+  
+  <h2 class="section-title" data-aos="fade-up">Research</h2>
+  <div class="research-card" data-aos="zoom-in">
+  <div class="research-card">
+    <span class="badge">Under Review</span>
+
+    <span>2024</span>
+    <h3>Formation Control using Deep RL</h3>
+    <p>Submitted to Springer (AAMAS)</p>
+    <p>Co-author – RL benchmarking & performance analysis</p>
+  </div>
+</section>
+
+<section id="contactme">
+  <h2 data-aos="fade-up">Contact</h2>
+
+  <div class="contact-container" data-aos="fade-up">
+
+    <a href="mailto:sarayu.mallarapu_2027@woxsen.edu.in" class="contact-card">
+      <i class="fas fa-envelope"></i>
+      <span>Gmail</span>
+    </a>
+
+    <a href="https://github.com/Sarayu51179" target="_blank" class="contact-card">
+      <i class="fab fa-github"></i>
+      <span>GitHub</span>
+    </a>
+
+    <a href="https://www.linkedin.com/in/mallarapu-sarayu" target="_blank" class="contact-card">
+      <i class="fab fa-linkedin"></i>
+      <span>LinkedIn</span>
+    </a>
+
+    <a href="https://wa.me/918885448593" target="_blank" class="contact-card">
+      <i class="fab fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+
+  </div>
+</section>
+<!-- SCRIPTS -->
+
+<!-- Typing Effect -->
+<script>
+const text = "Hey there! I'm Sarayu...";
+let i = 0;
+
+function typeEffect() {
+  if (i < text.length) {
+    document.getElementById("typing").innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeEffect, 70);
+  }
+}
+typeEffect();
+</script>
+
+<!-- AOS -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000 });
+</script>
+
+<!-- Particles -->
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 70 },
+    size: { value: 3 },
+    move: { speed: 2 },
+    line_linked: { enable: true }
+  }
+});
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll('.skill-card');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('show');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  cards.forEach(card => observer.observe(card));
+});
+
+</script>
+</body>
+</html>
