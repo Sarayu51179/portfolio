@@ -19,14 +19,30 @@
 
 <!-- NAVBAR -->
 <nav>
+  
   <h2 class="logo">Mallarapu Sarayu</h2>
   <div>
-    <a href="#aboutme ">About me</a>
+    <a href="#aboutme">About me</a>
     <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
+    <div class="nav-item">
+  <a href="#projects">Projects</a>
+
+  <div class="dropdown">
+    
+    <a href="#proj1">Multi-Agent RL Navigation</a>
+    <a href="#proj2">AI Legal Assistant</a>
+    <a href="#proj3">Assistive System</a>
+    <a href="#proj4">Fall Detection</a>
+    <a href="#proj5">Drone Swarm Network (Self-Healing)</a>
+    <a href="#proj6">Multi-Horizon Stock Forecasting System</a>
+    <a href="#proj7">Handwritten OCR System</a>
+  </div>
+</div>
     <a href="#achievements">Achievements</a>
     <a href="#contactme">Contact</a>
+    
   </div>
+  
 </nav>
 
 <!-- HERO -->
@@ -43,7 +59,12 @@
 
   </div>
 </section>
-
+<div class="scroll-indicator" onclick="scrollToNext()">
+  <div class="mouse">
+    <div class="wheel"></div>
+  </div>
+  <p>Discover more!</p>
+</div>
 <section id="aboutme">
   <div class="hero-container">
 
@@ -61,6 +82,27 @@ with experience across deep learning, computer vision, and NLP, including RAG, e
 I’m particularly interested in building interpretable, reliable, and production-ready AI systems through a research-driven approach.
 </p>
       </p>
+      
+      <div class="stats-line" data-aos="fade-up">
+  <div class="stat">
+    <h2>8.8</h2>
+    <p>CGPA</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="stat">
+    <h2>5+</h2>
+    <p>Projects</p>
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="stat">
+    <h2>3+</h2>
+    <p>Domains</p>
+  </div>
+</div>
     </div>
 
     <!-- IMAGE -->
@@ -79,7 +121,7 @@ I’m particularly interested in building interpretable, reliable, and productio
 
   <h2 data-aos="fade-up">Projects</h2>
   <div class="project-grid">
-    <div class="card" data-aos="zoom-in">
+    <div class="card" id="proj1" data-aos="zoom-in">
       <div class="project-title">Multi-Agent RL Navigation</div>
       <p></p>
       <div class="section-title">Problem:</div>
@@ -102,15 +144,15 @@ I’m particularly interested in building interpretable, reliable, and productio
     <div class="section-title">Outcome:</div>
     <p></p>
     <div class="project-text outcome">
-      Improved navigation success rate by 35% and reduced collision frequency by 15%
+      <li>Improved navigation success rate by 35% and reduced collision frequency by 15%</li>
     </div>
-      <a href="#" class="btn small">GitHub</a>
+      <a href="https://github.com/Sarayu51179/Multi-agent-RL-navigation" class="btn small">GitHub</a>
     </div>
 
 
 
 
-    <div class="card" data-aos="zoom-in">
+    <div class="card" id="proj2"data-aos="zoom-in">
       <div class="project-title">AI-Legal Assisstant</div>
       <p></p>
       <div class="section-title">Problem:</div>
@@ -135,7 +177,7 @@ I’m particularly interested in building interpretable, reliable, and productio
     <div class="section-title">Outcome:</div>
     <p></p>
     <div class="project-text outcome">
-      Reduced hallucinations and improved accuracy and relevance of responses over long-form legal documents
+      <li>Reduced hallucinations and improved accuracy and relevance of responses over long-form legal documents</li>
     </div>
       <a href="https://github.com/Sarayu51179/AI-Legal-Document-Assistant-RAG-" class="btn small">GitHub</a>
     </div>
@@ -143,7 +185,7 @@ I’m particularly interested in building interpretable, reliable, and productio
 
 
     
-    <div class="card" data-aos="zoom-in">
+    <div class="card" id="proj3"data-aos="zoom-in">
       <div class="project-title">Assistive System for Visually Impaired Individuals</div>
       <p></p>
       <div class="section-title">Problem:</div>
@@ -167,14 +209,15 @@ I’m particularly interested in building interpretable, reliable, and productio
     <div class="section-title">Outcome:</div>
     <p></p>
     <div class="project-text outcome">
-      Improved object detection accuracy by 25%, increased transparency by 75%, and enhanced user interaction with real-time feedback.</div>
-      <a href="#" class="btn small">GitHub</a>
+      <li>Improved object detection accuracy by 25%, increased transparency by 75%, and enhanced user interaction with real-time feedback.</li>
+    </div>
+      <a href="https://github.com/Sarayu51179/AssisstantforVisuallyimpaired" class="btn small">GitHub</a>
     </div>
 
 
 
 
-<div class="card" data-aos="zoom-in">
+<div class="card" id="proj4" data-aos="zoom-in">
        <div class="project-title">Fall Detection System for Elderly Care</div>
       <p></p>
       <div class="section-title">Problem:</div>
@@ -198,10 +241,129 @@ I’m particularly interested in building interpretable, reliable, and productio
     <div class="section-title">Outcome:</div>
     <p></p>
     <div class="project-text outcome">
-      Improved fall-angle detection accuracy by 49% and enabled real-time monitoring with rapid alerts.</div>
+      <li>Improved fall-angle detection accuracy by 49% and enabled real-time monitoring with rapid alerts.</li>
+    </div>
       <a href="https://github.com/Sarayu51179/Fall-detection-system" class="btn small">GitHub</a>
+</div>
+
+
+
+  <!-- HIDDEN PROJECTS (INSIDE GRID) -->
+  <div id="more-projects" class="hidden-projects">
+
+    <div class="card" id="proj5" data-aos="zoom-in">
+      <div class="project-title">Drone Swarm Network (Self-Healing)</div>
+<br>
+      <div class="section-title">Problem:</div>
+      <p>Decentralized communication failure in dynamic drone swarms.</p>
+<br>
+      <div class="section-title">Technical Approach:</div>
+      <br>
+      <li>Built swarm simulator with failures + constraints.</li>
+      <li>Applied GAE, VGAE, Graph GAN, Diffusion Models.</li>
+      <li>Used MARL for adaptive self-healing control.</li>
+<br>
+      <div class="section-title">Tech Stack:</div>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">Graph Neural Networks</span>
+        <span class="tech-tag">GAE</span>
+        <span class="tech-tag">VGAE</span>
+        <span class="tech-tag">Graph GAN</span>
+        <span class="tech-tag">Diffusion Models</span>
+        <span class="tech-tag">Multi-agent RL</span>
+        <span class="tech-tag">Streamlit</span>
+      </div>
+<br>
+      <div class="section-title">Outcome:</div>
+      <div class="project-text outcome">
+        <br>
+        <li>96.8% network stability</li>
+        <li>≤ 4-step recovery time</li>
+        <li>~35% robustness improvement</li>
+      </div>
+
+      <a href="https://github.com/Sarayu51179/DroneSwarmSelfHealingNetwork" class="btn small">GitHub</a>
     </div>
 
+
+
+
+
+<div class="card" id="proj6" data-aos="zoom-in">
+      <div class="project-title">Multi-Horizon Stock Forecasting System</div>
+<br>
+      <div class="section-title">Problem:</div>
+      <p>Accurate multi-horizon stock prediction under volatility.</p>
+<br>
+      <div class="section-title">Technical Approach:</div>
+      <br>
+      <li>Multi-horizon models (short → long term).</li>
+      <li>Engineered 20+ features and sentiment signals.</li>
+      <li>Built backtesting and automated reporting.</li>
+<br>
+      <div class="section-title">Tech Stack:</div>
+      <div class="tech-stack">
+        <span class="tech-tag">ML</span>
+        <span class="tech-tag">Time Series</span>
+        <span class="tech-tag">Pandas</span>
+        <span class="tech-tag">Scikit-learn</span>
+      </div>
+<br>
+      <div class="section-title">Outcome:</div>
+      <div class="project-text outcome">
+        <br>
+        <li>~20% accuracy improvement.</li>
+        <li>80% manual effort reduction.</li>
+        <li>Real-time analytics dashboard.</li>
+      </div>
+
+      <a href="https://github.com/Sarayu51179/Multihorizon-forecasting-model" class="btn small">GitHub</a>
+    </div>
+
+
+
+
+
+    
+<div class="card" id="proj7" data-aos="zoom-in">
+      <div class="project-title">Handwritten OCR System</div>
+<br>
+      <div class="section-title">Problem:</div>
+      <p>High variability in handwritten character recognition.</p>
+<br>
+      <div class="section-title">Technical Approach:</div>
+      <br>
+      <li>Built CNN+LSTM + TrOCR models.</li>
+      <li>Trained on 814K EMNIST dataset.</li>
+      <li>Applied augmentation + error analysis.</li>
+<br>
+      <div class="section-title">Tech Stack:</div>
+      <div class="tech-stack">
+        <span class="tech-tag">Python</span>
+        <span class="tech-tag">LSTM</span>
+        <span class="tech-tag">TR-OCR</span>
+        <span class="tech-tag">Pytorch</span>
+        <span class="tech-tag">EMNIST</span>
+        <span class="tech-tag">Transformers</span>
+      </div>
+<br>
+      <div class="section-title">Outcome:</div>
+      <div class="project-text outcome">
+        <br>
+        <li>~93% accuracy.</li>
+        <li>30% robustness improvement.</li>
+        <li>20% error reduction (ambiguous chars).</li>
+      </div>
+       <a href="https://github.com/Sarayu51179/OCR-Sytem" class="btn small">GitHub</a>
+  </div>
+  </div>
+  </div>
+    
+<!-- BUTTON OUTSIDE GRID -->
+<div class="show-more-container">
+  <button id="showMoreBtn">Show More ↓</button>
+</div>
 </section>
 
 
@@ -305,14 +467,23 @@ I’m particularly interested in building interpretable, reliable, and productio
 <br>
 <br>
 <!-- ACHIEVEMENTS -->
+
+
 <section id="achievements">
   <h2 class="section-title" data-aos="fade-up">Achievements</h2>
 
-  <div class="timeline-container" data-aos="fade-up">
+  <div class="achievements-wrapper">
 
-    <div class="timeline-item" data-aos="zoom-in">
+    <!-- LEFT BUTTON -->
+    <button class="scroll-btn left" onclick="scrollAchievements(-300)">
+      <i class="fas fa-chevron-left"></i>
+    </button>
+
+    <!-- SCROLL AREA -->
+    <div class="timeline-container" data-aos="fade-up">
+      <div class="timeline-item" data-aos="zoom-in">
       <div class="content">
-        <span>2023–Present</span>
+        <span>2023–2027</span>
         <h3>Class Representative</h3>
         <p>Led coordination for 70+ students</p>
       </div>
@@ -344,10 +515,18 @@ I’m particularly interested in building interpretable, reliable, and productio
 
     <div class="timeline-item">
       <div class="content">
-        <span>2023</span>
-        <h3>3rd Place – NRSC Essay</h3>
+        <span>2024</span>
+        <h3>NRSC Essay Competition</h3>
+        <p>Secured 3rd place in the competition</p>
       </div>
     </div>
+
+  </div>
+
+    <!-- RIGHT BUTTON -->
+    <button class="scroll-btn right" onclick="scrollAchievements(300)">
+      <i class="fas fa-chevron-right"></i>
+    </button>
 
   </div>
 </section>
@@ -397,6 +576,26 @@ I’m particularly interested in building interpretable, reliable, and productio
 
   </div>
 </section>
+<footer class="footer">
+  <p>© <span id="year"></span> Mallarapu Sarayu. All rights reserved.</p>
+</footer>
+<button id="backToTop">
+  <svg class="progress-ring" width="60" height="60">
+    <circle
+      class="progress-ring-circle"
+      stroke="rgba(34,197,94,0.8)"
+      stroke-width="3"
+      fill="transparent"
+      r="26"
+      cx="30"
+      cy="30"
+    />
+  </svg>
+  <i class="fas fa-arrow-up"></i>
+</button>
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
 <!-- SCRIPTS -->
 
 <!-- Typing Effect -->
@@ -425,11 +624,54 @@ typeEffect();
 <script>
 particlesJS("particles-js", {
   particles: {
-    number: { value: 70 },
-    size: { value: 3 },
-    move: { speed: 2 },
-    line_linked: { enable: true }
+    number: { value: 60 },
+
+    shape: {
+      type: "edge"   // 🔥 makes them squares (not dots)
+    },
+
+   size: {
+  value: 4,
+  random: true,
+  anim: {
+    enable: true,
+    speed: 3,
+    size_min: 1,
+    sync: false
   }
+},
+
+    color: {
+      value: "#22c55e"   // neon green
+    },
+
+    opacity: {
+      value: 0.7,
+      random: true
+    },
+
+    move: {
+      enable: true,
+      speed: 2,
+      direction: "top",   // 🔥 upward movement (KEY)
+      straight: true,
+      random: false,
+      out_mode: "out"
+    },
+
+    line_linked: {
+      enable: false   // ❌ remove lines (important)
+    }
+  },
+
+  interactivity: {
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false }
+    }
+  },
+
+  retina_detect: true
 });
 </script>
 <script>
@@ -446,7 +688,88 @@ document.addEventListener("DOMContentLoaded", () => {
 
   cards.forEach(card => observer.observe(card));
 });
-
 </script>
+<script>
+const scrollIndicator = document.querySelector(".scroll-indicator");
+
+/* Scroll to next section */
+function scrollToNext() {
+  document.querySelector("#projects")
+    .scrollIntoView({ behavior: "smooth" });
+}
+
+/* Auto hide after scrolling */
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 100) {
+    scrollIndicator.style.opacity = "0";
+    scrollIndicator.style.pointerEvents = "none";
+  } else {
+    scrollIndicator.style.opacity = "1";
+    scrollIndicator.style.pointerEvents = "auto";
+  }
+});
+</script>
+<script>
+function scrollAchievements(value) {
+  document.querySelector(".timeline-container")
+    .scrollBy({ left: value, behavior: "smooth" });
+}
+</script>
+<script>
+const btn = document.getElementById("backToTop");
+const circle = document.querySelector(".progress-ring-circle");
+
+const radius = 26;
+const circumference = 2 * Math.PI * radius;
+
+circle.style.strokeDasharray = circumference;
+circle.style.strokeDashoffset = circumference;
+
+function setProgress(percent) {
+  const offset = circumference - percent * circumference;
+  circle.style.strokeDashoffset = offset;
+}
+
+window.addEventListener("scroll", () => {
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = scrollTop / docHeight;
+
+  setProgress(scrollPercent);
+
+  if (scrollTop > 300) {
+    btn.classList.add("show");
+  } else {
+    btn.classList.remove("show");
+  }
+});
+
+btn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+});
+</script>
+<script>
+const showMoreBtn = document.getElementById("showMoreBtn");
+const moreProjects = document.getElementById("more-projects");
+
+let expanded = false;
+
+showMoreBtn.addEventListener("click", () => {
+  expanded = !expanded;
+
+  if (expanded) {
+    moreProjects.classList.add("show");
+    showMoreBtn.textContent = "Show Less ↑";
+  } else {
+    moreProjects.classList.remove("show");
+    showMoreBtn.textContent = "Show More ↓";
+  }
+});
+</script>
+</script>
+
 </body>
 </html>
